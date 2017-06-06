@@ -1,4 +1,6 @@
-# ABSTRAKTOR theme
+# ABSTRAKTOR.com
+
+This is a Hugo site to host the latest abstraktor.com incarnation.
 
 ## Develop
 
