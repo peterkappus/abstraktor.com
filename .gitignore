@@ -1,0 +1,4 @@
+samples/*.jpg
+.sass-cache/
+public/
+.DS*

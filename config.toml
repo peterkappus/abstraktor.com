@@ -1,0 +1,4 @@
+baseurl = "http://abstraktor.com/"
+languageCode = "en-us"
+title = "ABSTRAKTOR"
+theme = "abstraktor"
