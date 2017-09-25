@@ -7,20 +7,20 @@ html lange=en
     / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
     title ABSTRAKTOR | One of a kind geometric abstract art
     / Bootstrap
-    link href="css/bootstrap.min.css" rel="stylesheet"
-    link href="css/main.css?{{ .Now.Second }}" rel="stylesheet"
-    script src="js/jquery.min.js"    
-    script src="js/bootstrap.min.js"    
-    script src="js/abstraktor.js"    
+    link href="/css/bootstrap.min.css" rel="stylesheet"
+    link href="/css/main.css?{{ .Now.Second }}" rel="stylesheet"
+    script src="/js/jquery.min.js"
+    script src="/js/bootstrap.min.js"
+    script src="/js/abstraktor.js"
     script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"
-    / script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"    
+    / script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
     / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     / WARNING: Respond.js doesn't work if you view the page via file://
     = conditionalComment hidden lt IE 9
       script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"
-      script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"    
-    link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css" 
-  body    
+      script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
+    link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css"
+  body
     /
       .navbar
         .container
@@ -43,34 +43,34 @@ html lange=en
     .hero-unit
       .container
         .row
-          .col-xs-6.col-xs-offset-6     
+          .col-xs-6.col-xs-offset-6
             .hero-text
-              h1 ABSTRAKTOR              
+              h1 ABSTRAKTOR
               h2 style="margin-bottom: 2rem" Unique. Like you.
               / Herro... Is it me you're looking for?
               p.lead Beautiful geometric abstract art, perfectly, mathematically crafted just for you. No two are alike.
-              center 
-                a.btn.btn-primary href="#contact" Get Yours                        
+              center
+                a.btn.btn-primary href="#contact" Get Yours
     .container
       .row
         .col-sm-12.section_head
           center
             h2 Inspired. And inspiring.
             i Here are a few examples. Every piece is unique.
-      .row.samples 
-        {{ range (readDir "static/img/samples") }}        
+      .row.samples
+        {{ range (readDir "static/img/samples") }}
           {{if in .Name "jpg" }}
             .col-sm-4
-              img src="/img/samples/{{ .Name }}"  
+              img src="/img/samples/{{ .Name }}"
           {{ end }}
         {{ end }}
       .row
         .col-sm-12.section_head
           center
             h2 How does it work? (FAQs)
-            i Frequently Asked Questions 
+            i Frequently Asked Questions
       .faq
-        .row 
+        .row
           .col-md-6
             h3 What are these?
             p These are unique, custom designed, museum quality, fine art prints on textured, heavy-weight, acid-free paper. Each one is made specifically for you. With proper care they will look fantastic for decades.
@@ -109,15 +109,15 @@ html lange=en
                 label for="email" Email*
                 input#email.form-control type="email" placeholder="Email" name="email" required="true"
             .col-sm-6
-              label for="message" Wish list 
+              label for="message" Wish list
               textarea#message.form-control type="text" placeholder="Message" name="message" style="height: 150px"
               p.help-block Please describe things like the size, type, density, color, etc. that you would prefer.
               center
                 button.btn.btn-send style="width: 80%" Let's go!
 
-    .container    
+    .container
       p All works &copy; {{ .Now.Year }}
-      
+
     script
       |
         //TODO.....
