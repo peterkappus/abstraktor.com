@@ -6,33 +6,11 @@ body {
   padding-bottom: 2rem;
   /* -bottom: 1px solid #999 */ }
 
-.hero-unit {
-  background-image: url("/img/stone.jpg");
-  /* background-attachment: fixed */
-  width: 100%;
-  display: block;
-  height: 500px;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  -webkit-transition: background-image 1s;
-  transition: background-image 1s; }
-@media(max-width: 775px) {
-  .hero-unit {
-    color: #fff;
-    background-image: url("/img/small_head.jpg"); }
-    .hero-unit .btn.btn-primary {
-      background: none;
-      border: 5px solid #f0a;
-      color: #fff; } }
 .section_head {
-  margin-bottom: 3rem; }
+  margin-bottom: 2rem; }
 
 .form_layer {
-  background: #333;
-  background-image: url("/img/vera_back2.jpg");
+  background: #f3f3f3;
   width: 100%;
   display: block;
   background-position: center;
@@ -43,10 +21,12 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 4rem;
-  color: #fff; }
+  color: #333; }
   .form_layer label {
     font-size: 1.8rem !important;
     font-weight: normal !important; }
+  .form_layer input, .form_layer textarea {
+    border-radius: 0; }
 
 .btn.btn-primary {
   background: none;
@@ -60,22 +40,11 @@ body {
   color: #fff;
   font-size: 3rem; }
 
-.hero-text {
-  margin-top: 15%; }
-  .hero-text p {
-    margin-bottom: 4rem; }
-@media(min-width: 850px) {
-  .hero-text h1 {
-    font-size: 4rem; } }
-@media(max-width: 550px) {
-  .hero-text h1 {
-    font-size: 2.5rem; }
-  .hero-text h2 {
-    font-size: 1.7rem; }
-  .hero-text p {
-    font-size: 1.5rem; }
-  .hero-text .btn.btn-primary {
-    font-size: 1.5rem; } }
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 5rem; }
+
 .samples img {
   width: 100%;
   padding-bottom: 2rem; }
@@ -87,7 +56,7 @@ body {
 
 /**
  * .navbar-brand
- *   display: none      
+ *   display: none
  * .navbar.shrink
  *   background: #f00
  *   -webkit-transition: all 0.8s ease

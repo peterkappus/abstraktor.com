@@ -9,10 +9,10 @@ html lange=en
     / Bootstrap
     link href="/css/bootstrap.min.css" rel="stylesheet"
     link href="/css/main.css?{{ .Now.Second }}" rel="stylesheet"
-    script src="/js/jquery.min.js"
+    / script src="/js/jquery.min.js"
     script src="/js/bootstrap.min.js"
-    script src="/js/abstraktor.js"
-    script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"
+    / script src="/js/abstraktor.js"
+    / script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"
     / script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
     / HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
     / WARNING: Respond.js doesn't work if you view the page via file://
@@ -21,42 +21,13 @@ html lange=en
       script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
     link href="//fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css"
   body
-    /
-      .navbar
-        .container
-          .navbar-header
-            button.navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
-              span.sr-only Toggle Navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            .navbar-brand ABSTRAKTOR
-          /
-            #navbar.collapse.navbar-collapse.navbar-right
-              ul.nav.navbar-nav
-                li
-                  a href="/" About
-                li
-                  a href="/" FAQ
-                li
-                  a href="/" Blog
-    .hero-unit
-      .container
-        .row
-          .col-xs-6.col-xs-offset-6
-            .hero-text
-              h1 ABSTRAKTOR
-              h2 style="margin-bottom: 2rem" Unique. Like you.
-              / Herro... Is it me you're looking for?
-              p.lead Beautiful geometric abstract art, perfectly, mathematically crafted just for you. No two are alike.
-              center
-                a.btn.btn-primary href="#contact" Get Yours
     .container
       .row
-        .col-sm-12.section_head
-          center
-            h2 Inspired. And inspiring.
-            i Here are a few examples. Every piece is unique.
+        .col-xs-12 style="text-align: center"
+          h1 ABSTRAKTOR
+          p style="margin-bottom: 3rem"
+            i Digital abstract expressionism.
+    .container
       .row.samples
         {{ range (readDir "static/img/samples") }}
           {{if in .Name "jpg" }}
@@ -64,39 +35,12 @@ html lange=en
               img src="/img/samples/{{ .Name }}"
           {{ end }}
         {{ end }}
-      .row
-        .col-sm-12.section_head
-          center
-            h2 How does it work? (FAQs)
-            i Frequently Asked Questions
-      .faq
-        .row
-          .col-md-6
-            h3 What are these?
-            p These are unique, custom designed, museum quality, fine art prints on textured, heavy-weight, acid-free paper. Each one is made specifically for you. With proper care they will look fantastic for decades.
-          .col-md-6
-            h3 Are they really unique?
-            p Each piece is made to order. While many pieces will have similar qualities, each one is unique. No single design will ever be sold more than once.
-        .row
-          .col-md-6
-            h3 How big are they? How much are they?
-            p Pieces can be made to any size you like but are typically <b>40cm by 40cm</b> (square). For a limited time, you can get a 40cm x 40cm (16" x 16") for just <b style="font-size: 24px">£49</b>.
-          .col-md-6
-            h3 Can I return it?
-            p Absolutely. We want you to be 100% satisfied with your ABSTRAKTOR original. If you're not delighted with your print, please send it back to us within 30 days of receipt for a full refund.
-        .row
-          .col-md-6
-            h3 How does it work?
-            p Contact us using the form below and we'll get in touch to find out what you like. Then we will create <b>3 options</b> for you to review. Tell us your faviourite and make any final tweaks. We'll send it back for your approval before it gets printed (and framed if you like) and sent out to you anywhere in the world.
-          .col-md-6
-            h3 Sounds good. How long does it take?
-            p The entire process takes around 3 weeks from when you fill out the form below. What are you waiting for? Scroll on...
       a name="contact"
       .row
         .col-sm-12.section_head
           center
-            h2 I want one!
-            i Please fill in the form below and we'll contact you with some ideas and information to get started.
+            h2 Enquiries
+            i ABSTRAKTOR thanks you for your human interest.
     .form_layer
       .container
         form role="form" method="POST" data-toggle="validator" action="http://formspree.io/peterk+formspree@peterkappus.com"
@@ -109,11 +53,11 @@ html lange=en
                 label for="email" Email*
                 input#email.form-control type="email" placeholder="Email" name="email" required="true"
             .col-sm-6
-              label for="message" Wish list
+              label for="message" Message
               textarea#message.form-control type="text" placeholder="Message" name="message" style="height: 150px"
-              p.help-block Please describe things like the size, type, density, color, etc. that you would prefer.
+              p.help-block How do you feel?
               center
-                button.btn.btn-send style="width: 80%" Let's go!
+                button.btn.btn-send style="width: 80%" Connect
 
     .container
       p All works &copy; {{ .Now.Year }}
@@ -135,3 +79,4 @@ html lange=en
 
         ga('create', 'UA-8781116-11', 'auto');
         ga('send', 'pageview');
+san
