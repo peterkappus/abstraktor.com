@@ -10,7 +10,7 @@ html lange=en
     link href="/css/bootstrap.min.css" rel="stylesheet"
     link href="/css/main.css?{{ .Now.Second }}" rel="stylesheet"
     / script src="/js/jquery.min.js"
-    script src="/js/bootstrap.min.js"
+    / script src="/js/bootstrap.min.js"
     / script src="/js/abstraktor.js"
     / script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"
     / script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"
@@ -26,7 +26,8 @@ html lange=en
         .col-xs-12 style="text-align: center"
           h1 ABSTRAKTOR
           p style="margin-bottom: 3rem"
-            i Digital abstract expressionism.
+            i Digital abstract expressionism. <a href="#contact">Make contact.</a>
+          hr
     .container
       .row.samples
         {{ range (readDir "static/img/samples") }}
@@ -39,6 +40,7 @@ html lange=en
       .row
         .col-sm-12.section_head
           center
+            hr style="margin-top: 0"
             h2 Enquiries
             i ABSTRAKTOR thanks you for your human interest.
     .form_layer
@@ -52,15 +54,24 @@ html lange=en
               .form-group
                 label for="email" Email*
                 input#email.form-control type="email" placeholder="Email" name="email" required="true"
+              .form-group
+                .insta.hidden-xs style="display: block; margin-top: 5rem"
+                  a href="http://instagram.com/abstraktor" target="_blank"
+                    img src="/img/instagram.png" style="width: 64px; height=64px" style="display: inline"
+                    span style="margin-left: 2rem; font-size: 2rem" Follow ABSTRAKTOR
             .col-sm-6
               label for="message" Message
               textarea#message.form-control type="text" placeholder="Message" name="message" style="height: 150px"
               p.help-block How do you feel?
               center
                 button.btn.btn-send style="width: 80%" Connect
+              .insta.visible-xs style="display: block; margin-top: 5rem"
+                a href="http://instagram.com/abstraktor" target="_blank"
+                  img src="/img/instagram.png" style="width: 64px; height=64px" style="display: inline"
+                  span style="margin-left: 2rem; font-size: 2rem" Follow ABSTRAKTOR
 
     .container
-      p All works &copy; {{ .Now.Year }}
+      p All works &copy; {{ now.Year }}
 
     script
       |
