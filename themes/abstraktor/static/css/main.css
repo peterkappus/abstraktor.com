@@ -37,13 +37,11 @@ body {
 
 .btn.btn-send {
   background: #a06;
-  color: #fff;
-  font-size: 3rem; }
+  color: #fff; }
 
 h1 {
   text-align: center;
-  margin: 2rem 0;
-  font-size: 5rem; }
+  margin: 2rem 0; }
 
 .samples img {
   width: 100%;

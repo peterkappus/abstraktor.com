@@ -23,7 +23,7 @@ html lange=en
   body
     .container
       .row
-        .col-sm-12 style="text-align: center"
+        .col-12 style="text-align: center"
           h1 ABSTRAKTOR
           p style="margin-bottom: 3rem"
             i Digital abstract expressionism. <a href="#contact">Make contact.</a>
@@ -58,14 +58,13 @@ html lange=en
               label for="message" Message
               textarea#message.form-control type="text" placeholder="Message" name="message" style="height: 150px"
               p.help-block How do you feel?
-              center
-                button.btn.btn-send style="width: 100%" Connect
+              button.btn.btn-send style="width: 80%" Connect
           .row
             .col-sm-12
               .insta style="text-align: left; display: block; margin-top: 5rem"
                 a href="http://instagram.com/abstraktor" target="_blank"
                   img src="/img/instagram.png" style="width: 64px; height=64px" style="display: inline"
-                  span style="margin-left: 1rem; font-size: 1.5rem" Follow ABSTRAKTOR
+                  span style="margin-left: 1rem; font-size: 1.2rem" Follow ABSTRAKTOR
 
     .container
       p All works &copy; {{ now.Year }}
